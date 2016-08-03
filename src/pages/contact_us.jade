@@ -1,0 +1,71 @@
+extends layout/layout.jade
+
+block con
+    .phone_wrap
+        .us_wrap
+            h2 联系我们
+                span （三个工作日内给你回复）
+            .line
+            h3 HR合作邮箱：
+                span hr@firesvr.com
+                i （邢娜）
+            h3 市场合作邮箱：
+                span limeng@firesvr.com
+                i （李萌）
+            h3 商务合作邮箱：
+                span huyunde@firesvr.com
+                i （胡赟德）
+            h3 硬件合作邮箱：
+                span wangyang@firesvr.com
+                i （王洋）
+            ul.code_list.clearfix
+                li
+                    img(src="img/weixin_code.png")
+                    h2 微信公众号
+                li
+                    img(src="img/weibo_code.png")
+                    h2 微博号
+    .pc_wrap
+        .us_title
+            .us_title_wrap.res
+                h3 联系我们
+        .page
+            .nav.res 
+                a(href="about_us.html") 关于我们
+                a.active(href="contact_us.html") 联系我们
+                a(href="join_us.html") 加入我们
+            .content.res.padb
+                h3 HR合作邮箱：
+                p hr@firesvr.com（邢娜）
+                .line.res
+                h3 市场合作邮箱：
+                p limeng@firesvr.com（李萌）
+                .line.res
+                h3 商务合作邮箱： 
+                p huyunde@firesvr.com（胡赟德）
+                .line.res
+                h3 硬件合作邮箱：
+                p wangyang@firesvr.com（王洋）
+                .line.res
+                i (工作人员会在三个工作日内给你回复，请耐心等待。)
+                ul.code_list.clearfix
+                    li
+                        img(src="img/weixin_code.png")
+                        h2 微信公众号
+                    li
+                        img(src="img/weibo_code.png")
+                        h2 微博号
+            .add_map.res#map
+            script(src="http://api.map.baidu.com/api?v=2.0&ak=67jMQ5DmYTe1TLMBKFUTcZAR")
+            script.         
+                var map = new BMap.Map("map");
+                var point = new BMap.Point(116.488119,39.996826);
+                map.centerAndZoom(new BMap.Point(116.488119,39.996826), 21);  
+                map.addControl(new BMap.MapTypeControl());  
+                map.setCurrentCity("北京");         
+                map.enableScrollWheelZoom(true);
+                var myGeo = new BMap.Geocoder();
+                var marker = new BMap.Marker(point);
+                map.addOverlay(marker);               
+                marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+            
