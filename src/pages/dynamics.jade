@@ -2,83 +2,31 @@ extends layout/layout.jade
 
 block con
     .phone_wrap.dynamics_wrap
-        h2 官网动态
+        h2 公司动态
         ul.news_list
-            li
-                a(href="#") 
-                    p 北京焰火工坊科技有限公司大放异彩
-                    span 2014/04/01
-            li
-                a(href="#") 
-                    p 北京焰火工坊科技有限公司大放异彩
-                    span 2014/04/01
-            li
-                a(href="#") 
-                    p 北京焰火工坊科技有限公司大放异彩
-                    span 2014/04/01
-            li
-                a(href="#") 
-                    p 北京焰火工坊科技有限公司大放异彩
-                    span 2014/04/01
-            li
-                a(href="#") 
-                    p 北京焰火工坊科技有限公司大放异彩
-                    span 2014/04/01
-            li
-                a(href="#") 
-                    p 北京焰火工坊科技有限公司大放异彩
-                    span 2014/04/01
-            li
-                a(href="#") 
-                    p 北京焰火工坊科技有限公司大放异彩
-                    span 2014/04/01
-            li
-                a(href="#") 
-                    p 北京焰火工坊科技有限公司大放异彩
-                    span 2014/04/01
-            li
-                a(href="#") 
-                    p 北京焰火工坊科技有限公司大放异彩
-                    span 2014/04/01
+            //- li
+            //-     a(href="#") 
+            //-         p 北京焰火工坊科技有限公司大放异彩
+            //-         span 2014/04/01
+            
         .more 查看更多文章 >
             
     .pc_wrap
         .news_wrap.clearfix
+            input#show_per_page(type="hidden")
+            input#current_page(type="hidden")
             .banner
                 img(src="img/shop-bg.png")
-            ul.news_left
-                li
-                    a.clearfix(href="#")
-                        img(src="img/news_01.png")
-                        .media-body
-                            h2 北京焰火工坊科技有限公司大放异彩
-                            p JiDome-1开发版VR眼镜赠送资格申请焰火工坊致力于移动VR市场的发展和繁荣，旨在为开发者提供最好的开...
-                                span 全文 》
-                            span IT168 2016年04月01日 20:00
-                li
-                    a.clearfix(href="#")
-                        img(src="img/news_02.png")
-                        .media-body
-                            h2 北京焰火工坊科技有限公司大放异彩
-                            p JiDome-1开发版VR眼镜赠送资格申请焰火工坊致力于移动VR市场的发展和繁荣，旨在为开发者提供最好的开...
-                                span 全文 》
-                            span IT168 2016年04月01日 20:00
-                li
-                    a.clearfix(href="#")
-                        img(src="img/news_03.png")
-                        .media-body
-                            h2 北京焰火工坊科技有限公司大放异彩
-                            p JiDome-1开发版VR眼镜赠送资格申请焰火工坊致力于移动VR市场的发展和繁荣，旨在为开发者提供最好的开...
-                                span 全文 》
-                            span IT168 2016年04月01日 20:00
-                li
-                    a.clearfix(href="#")
-                        img(src="img/news_04.png")
-                        .media-body
-                            h2 北京焰火工坊科技有限公司大放异彩
-                            p JiDome-1开发版VR眼镜赠送资格申请焰火工坊致力于移动VR市场的发展和繁荣，旨在为开发者提供最好的开...
-                                span 全文 》
-                            span IT168 2016年04月01日 20:00
+            ul.news_left#content
+                //- li
+                //-     a.clearfix(href="#")
+                //-         img(src="img/news_01.png")
+                //-         .media-body
+                //-             h2 北京焰火工坊科技有限公司大放异彩
+                //-             p JiDome-1开发版VR眼镜赠送资格申请焰火工坊致力于移动VR市场的发展和繁荣，旨在为开发者提供最好的开...
+                //-                 span 全文 》
+                //-             span IT168 2016年04月01日 20:00
+            #page_navigation
             .news_right
                 h2 焰火工坊公司公告
                 ul.news_right_body
@@ -91,4 +39,4 @@ block con
                 h2 官方微信
                 img(src="img/code01.png")    
                 p 扫描关注焰火工坊微信公众号
-            
+                

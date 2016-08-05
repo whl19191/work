@@ -294,7 +294,7 @@ aside .aside_wrap .text{
 .news_wrap{
     width:1200px;
     margin: 0 auto;
-
+    position: relative;
 }
 .news_wrap .banner img{
     width:100%;
@@ -303,7 +303,7 @@ aside .aside_wrap .text{
 .news_left{
     width:78%;
     float:left;
-    padding:0 .47rem 50px;
+    padding:0 .47rem 150px;
     background: #fff;
     margin-right: 2%;
 }
@@ -786,11 +786,11 @@ aside .aside_wrap .text{
 .games_wrap{
     background: url('../img/bg@2x-min.png') no-repeat;
     background-size: 100%;
-    padding:10.9rem .5319rem 0;
+    padding:17.9rem .5319rem 0;
 }
 .games_wrap .btn_download{
     position: inherit;
-    margin:0 auto 12.25rem;
+    margin:0 auto 5.25rem;
 }
 .games_wrap img{
     margin-bottom: .532rem;
@@ -909,11 +909,13 @@ aside .aside_wrap .text{
     right:0.64rem;
     bottom:1rem;
     width:.479rem;
+    transition: transform 300ms;
 }
 .phone_wrap .join_us .join_con{
     padding:0 0.5319rem 1rem;
     font-size: .64rem;
     line-height: 1rem;
+    transition: all 500ms;
 }
 .phone_wrap .join_us h5{
     line-height: 1rem;
@@ -925,6 +927,27 @@ aside .aside_wrap .text{
 .phone_wrap .join_us p{
     padding:0;
     border:none;
+}
+
+#page_navigation{
+    position: absolute;
+    bottom:50px;
+    width:78%;
+    text-align: center;
+}
+#page_navigation a{
+    border:1px solid #eee;
+    display: inline;
+    padding:11px 13px;
+    border-right:none;
+    background: #f6f6f6;
+    font-size: 14px;
+    cursor: pointer;
+    color:#333;
+}
+#page_navigation a.active_page{
+    background: #1373b3;
+    color:#fff;
 }
 @media screen and (max-width:1280px){
 	.page img{

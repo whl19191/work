@@ -69,6 +69,7 @@ header{
     float:left;
     margin: 0;
     line-height: 35px;
+    color:#333;
 }
 .header nav{
     float:right;
